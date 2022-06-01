@@ -5,7 +5,7 @@
     <title>Clipboard</title>
     <script>
         function copyToClipboard() {
-            const copyText = document.getElementById("myInput");
+            const copyText = document.getElementById("text-input");
             copyText.select();
             copyText.setSelectionRange(0, 99999); /* For mobile devices */
             navigator.clipboard.writeText(copyText.value);
